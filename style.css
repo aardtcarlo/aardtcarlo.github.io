@@ -1,0 +1,6 @@
+/* one-screen stylesheet */
+body        { font: 16px/1.6 Arial,Helvetica,sans-serif; margin: 2rem; background:#fff; color:#000; }
+a           { color:#0645ad; }             
+a:hover     { color:#3366cc; }
+h1,header,footer { margin:0 0 1rem 0; }
+nav a       { margin:0 .4rem; font-weight:bold; }
