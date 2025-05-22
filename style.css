@@ -34,7 +34,7 @@ nav ul {
 }
 
 nav ul li {
-    margin: 5px 0;
+    padding:0; margin:0;
 }
 
 nav ul li a {
@@ -71,13 +71,15 @@ ul li a:hover {
 
 /* Main Content Area */
 main {
-    margin-right: 220px;
-    padding: 20px;
+    margin:   0 220px 0 20px;
+    padding:  20px 0;
 }
 
 /* Headings */
 h1 {
-    margin-bottom: 20px;
+    font-size:1.4rem;   
+    padding:0 0 0.5rem 20px; 
+    margin-top:20px;
 }
 
 /* Back to Top Button (Optional) */
