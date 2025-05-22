@@ -1,6 +1,99 @@
-/* one-screen stylesheet */
-body        { font: 16px/1.6 Arial,Helvetica,sans-serif; margin: 2rem; background:#fff; color:#000; }
-a           { color:#0645ad; }             
-a:hover     { color:#3366cc; }
-h1,header,footer { margin:0 0 1rem 0; }
-nav a       { margin:0 .4rem; font-weight:bold; }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Flex container for layout */
+.container {
+    display: block; /* Change from flex to block for standard layout */
+    margin: 0; /* Limit the width of the container */
+    padding: 20px;
+}
+
+
+/* Navigation Menu */
+nav {
+    padding: 10px;
+    text-align: right;
+    position: fixed;
+    color: #333;
+    right: 0;
+    top: 0;
+}
+
+nav ul {
+    list-style-type:none;
+}
+
+nav ul li {
+    margin: 5px 0;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ccc;
+}
+
+/* Active page indication */
+nav ul li.active a {
+    color: #ccc;
+}
+
+/* General styles for lists outside navigation */
+ul li {
+    margin: 10px 0; /* Adjust margin between list items */
+    font-size: 16px; /* Set a font size */
+}
+
+ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+    color: #555; /* Different hover color */
+}
+
+/* Main Content Area */
+main {
+    margin-right: 220px;
+    padding: 20px;
+}
+
+/* Headings */
+h1 {
+    margin-bottom: 20px;
+}
+
+/* Back to Top Button (Optional) */
+#backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 240px;
+    padding: 10px 15px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#backToTop:hover {
+    background-color: #575757;
+}
