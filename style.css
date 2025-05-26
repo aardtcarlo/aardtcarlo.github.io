@@ -1,92 +1,84 @@
 * {
-    margin: 10;
-    padding: 10;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
+/* Page Layout */
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
     color: #333;
     background-color: #f4f4f4;
+    display: flex;
 }
 
-/* Flex container for layout */
-.container {
-    display: block; /* Change from flex to block for standard layout */
-    margin: 0; /* Limit the width of the container */
-    padding: 20px;
-}
-
-
-/* Navigation Menu */
+/* Navigation Menu - Left Vertical */
 nav {
-    padding: 10px;
-    text-align: right;
+    width: 200px;
+    background-color: #f4f4f4;
+    min-height: 100vh;
+    padding: 20px;
     position: fixed;
-    color: #333;
-    right: 0;
+    left: 0;
     top: 0;
 }
 
+nav .site-title {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #222;
+    margin-bottom: 10px;
+}
+
 nav ul {
-    list-style-type:none;
+    list-style-type: none;
 }
 
 nav ul li {
-    padding:0; margin:0;
+    margin-bottom: 20px;
 }
 
 nav ul li a {
-    color: #333;
+    color: #222;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s;
 }
 
 nav ul li a:hover {
-    color: #ccc;
+    color: #666;
 }
 
-/* Active page indication */
 nav ul li.active a {
-    color: #ccc;
-}
-
-/* General styles for lists outside navigation */
-ul li {
-    margin: 10px 0; /* Adjust margin between list items */
-    font-size: 16px; /* Set a font size */
-}
-
-ul li a {
-    color: #333;
-    text-decoration: none;
-}
-
-ul li a:hover {
-    text-decoration: underline;
-    color: #555; /* Different hover color */
+    color: #999;
 }
 
 /* Main Content Area */
 main {
-    margin:   0 220px 0 20px;
-    padding:  20px 0;
+    margin-left: 220px;
+    padding: 40px;
 }
 
 /* Headings */
 h1 {
-    font-size:1.4rem;   
-    padding:0 0 0.5rem 20px; 
-    margin-top:20px;
+    font-size: 1.4rem;
+    padding-bottom: 0.5rem;
+    margin-top: 20px;
+}
+
+/* General list styling */
+ul li {
+    font-size: 16px;
 }
 
 /* Back to Top Button (Optional) */
 #backToTop {
     position: fixed;
     bottom: 20px;
-    right: 240px;
+    left: 220px;
     padding: 10px 15px;
     background-color: #333;
     color: #fff;
