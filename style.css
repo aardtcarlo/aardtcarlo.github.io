@@ -1,93 +1,97 @@
+/* Reset & Global */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Page Layout */
 body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background-color: #f4f4f4;
-    display: flex;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: transparent;
 }
 
-/* Navigation Menu - Left Vertical */
+a {
+  color: #222;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #666;
+  text-decoration: none;
+}
+
+/* Full-screen 3D background */
+#globe-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  overflow: hidden;
+}
+
+/* Overlay for all content */
+#overlay {
+  position: relative;
+  z-index: 1;
+  pointer-events: auto;
+}
+
+/* Navigation Bar */
 nav {
-    width: 200px;
-    background-color: #f4f4f4;
-    min-height: 100vh;
-    padding: 20px;
-    position: fixed;
-    left: 0;
-    top: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  background-color: transparent;  
 }
 
 nav .site-title {
-    display: block;
-    font-size: 1.2rem;
-    font-weight: bold;
-    text-decoration: none;
-    color: #222;
-    margin-bottom: 10px;
+  display: block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #222;
+  margin-bottom: 20px;
 }
 
 nav ul {
-    list-style-type: none;
+  list-style-type: none;
+  display: block;
 }
 
 nav ul li {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
-nav ul li a {
-    color: #222;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s;
-}
 
-nav ul li a:hover {
-    color: #666;
-}
-
-nav ul li.active a {
-    color: #999;
-}
-
-/* Main Content Area */
+/* Main content area */
 main {
-    margin-left: 220px;
-    padding: 40px;
+  margin-top: 120px;
+  padding: 20px;
+  color: #222;
 }
 
-/* Headings */
-h1 {
-    font-size: 1.4rem;
-    padding-bottom: 0.5rem;
-    margin-top: 20px;
-}
-
-/* General list styling */
 ul li {
-    font-size: 16px;
+  font-size: 16px;
+  margin-bottom: 12px;
 }
 
-/* Back to Top Button (Optional) */
-#backToTop {
-    position: fixed;
-    bottom: 20px;
-    left: 220px;
-    padding: 10px 15px;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
 }
 
-#backToTop:hover {
-    background-color: #575757;
+/* Canvas settings */
+canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
